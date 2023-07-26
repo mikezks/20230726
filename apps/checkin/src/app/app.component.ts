@@ -9,6 +9,6 @@ import { ManageComponent } from '@flight-demo/checkin/feature-manage';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
+export default class AppComponent {
   title = 'checkin';
 }

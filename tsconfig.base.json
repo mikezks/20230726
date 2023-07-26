@@ -18,9 +18,14 @@
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,
-    "lib": ["ES2022", "dom"],
+    "lib": [
+      "ES2022",
+      "dom"
+    ],
     "paths": {
-      "@flight-demo/checkin/domain": ["libs/checkin/domain/src/index.ts"],
+      "@flight-demo/checkin/domain": [
+        "libs/checkin/domain/src/index.ts"
+      ],
       "@flight-demo/checkin/feature-manage": [
         "libs/checkin/feature-manage/src/index.ts"
       ],
@@ -33,7 +38,9 @@
       "@flight-demo/shared/util-validation": [
         "libs/shared/util-validation/src/lib/index.ts"
       ],
-      "@flight-demo/tickets/domain": ["libs/tickets/domain/src/lib/index.ts"],
+      "@flight-demo/tickets/domain": [
+        "libs/tickets/domain/src/lib/index.ts"
+      ],
       "@flight-demo/tickets/feature-booking": [
         "libs/tickets/feature-booking/src/lib/index.ts"
       ],
@@ -49,5 +56,8 @@
     "strictInputAccessModifiers": true,
     "strictTemplates": true
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
 }

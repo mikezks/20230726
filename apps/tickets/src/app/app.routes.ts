@@ -4,6 +4,7 @@ import { ConfigService } from '@flight-demo/shared/util-config';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { loadRemoteModule } from '@angular-architects/module-federation';
 
 export const APP_ROUTES: Routes = [
   {
@@ -15,7 +16,13 @@ export const APP_ROUTES: Routes = [
     path: 'home',
     component: HomeComponent,
   },
-
+  {
+    path: 'checkin',
+    loadComponent: () => loadRemoteModule(
+      'checkin',
+      './Component'
+    )
+  },
   {
     path: '',
     resolve: {
